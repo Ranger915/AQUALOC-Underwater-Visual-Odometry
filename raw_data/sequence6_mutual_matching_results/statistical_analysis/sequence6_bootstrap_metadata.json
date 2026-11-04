@@ -1,0 +1,38 @@
+{
+    "dataset": "AQUALOC Sequence 06",
+    "sampling_units": "170 ordered COLMAP reference frames",
+    "dyadic_observations": 14365,
+    "positive_pairs": 1143,
+    "negative_pairs": 13222,
+    "bootstrap_method": "Circular moving-block bootstrap over ordered reference frames. Block length 1 is frame/node bootstrap; lengths 5 and 10 preserve short-range temporal dependence.",
+    "pair_weight": "For pair (i,j), weight = multiplicity(frame_i) * multiplicity(frame_j). Pairs with identical endpoints are excluded because the manifest contains no self-pairs.",
+    "paired_comparisons": true,
+    "replicates_per_block_length": 1000,
+    "block_lengths_keyframes": [
+        1,
+        5,
+        10
+    ],
+    "random_seed": 20261104,
+    "confidence_interval": "Percentile 95% interval (2.5th and 97.5th percentiles)",
+    "primary_operating_point": {
+        "sampson_threshold_px": 2.0,
+        "minimum_mutual_inliers": 8
+    },
+    "secondary_operating_points": {
+        "minimum_mutual_inliers": [
+            12,
+            20
+        ]
+    },
+    "scopes": [
+        "all_pairs",
+        "local_gap_le_100",
+        "nonlocal_gap_ge_200"
+    ],
+    "warning": "Intervals are conditional on this one sequence and its COLMAP-derived reference labels. They do not establish between-sequence or between-site generalization. Circular blocks assume endpoint wraparound; block-length sensitivity should be reported.",
+    "outputs": {
+        "confidence_intervals": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\raw_data\\sequence6_mutual_matching_results\\statistical_analysis\\sequence6_bootstrap_confidence_intervals.csv",
+        "paired_contrasts": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\raw_data\\sequence6_mutual_matching_results\\statistical_analysis\\sequence6_bootstrap_paired_contrasts.csv"
+    }
+}

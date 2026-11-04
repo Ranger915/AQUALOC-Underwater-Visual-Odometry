@@ -1,0 +1,7 @@
+"Method","Detector","Pairs","SuccessPct","MeanInliers","MeanRatioMatches","MeanInlierRatio"
+"Fixed CLAHE Control","ORB","10129","99.427","336.18","385.79","0.8604"
+"Fixed CLAHE Control","AKAZE","10129","94.965","218.8","232.31","0.8693"
+"Fixed CLAHE Control","SIFT","10129","99.743","294.64","305.9","0.9576"
+"Adaptive CLAHE v2","ORB","10129","99.427","288.22","329.82","0.8604"
+"Adaptive CLAHE v2","AKAZE","10129","94.945","85.2","90.44","0.87"
+"Adaptive CLAHE v2","SIFT","10129","99.743","173","179.72","0.9559"

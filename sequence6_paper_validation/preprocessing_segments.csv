@@ -1,0 +1,4 @@
+mode,first_frame,last_frame,frames
+raw,0,210,211
+moderate_clahe,211,2787,2577
+raw,2788,3384,597

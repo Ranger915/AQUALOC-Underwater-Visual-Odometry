@@ -1,0 +1,219 @@
+[
+  {
+    "algorithm": "ORB",
+    "preprocessing": "raw",
+    "frames": 600,
+    "accepted": 173,
+    "success_rate": 0.2888146911519199,
+    "statuses": {
+      "initial_frame": 1,
+      "low_cheirality_fraction": 85,
+      "accepted": 173,
+      "insufficient_cheirality_inliers": 157,
+      "low_parallax": 5,
+      "few_matches": 168,
+      "reanchored_after_few_matches": 9,
+      "insufficient_essential_inliers": 2
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_orb_raw_v3.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_orb_raw_v3_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 600,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20,
+      "step_scale": "unit"
+    }
+  },
+  {
+    "algorithm": "ORB",
+    "preprocessing": "clahe",
+    "frames": 600,
+    "accepted": 255,
+    "success_rate": 0.4257095158597663,
+    "statuses": {
+      "initial_frame": 1,
+      "low_cheirality_fraction": 128,
+      "accepted": 255,
+      "insufficient_cheirality_inliers": 200,
+      "few_matches": 14,
+      "insufficient_essential_inliers": 1,
+      "reanchored_after_few_matches": 1
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_orb_clahe_v3.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_orb_clahe_v3_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 600,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20,
+      "step_scale": "unit"
+    }
+  },
+  {
+    "algorithm": "AKAZE",
+    "preprocessing": "raw",
+    "frames": 600,
+    "accepted": 111,
+    "success_rate": 0.18530884808013356,
+    "statuses": {
+      "initial_frame": 1,
+      "insufficient_cheirality_inliers": 110,
+      "accepted": 111,
+      "low_cheirality_fraction": 25,
+      "few_matches": 336,
+      "reanchored_after_few_matches": 17
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_akaze_raw_v3.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_akaze_raw_v3_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 600,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20,
+      "step_scale": "unit"
+    }
+  },
+  {
+    "algorithm": "AKAZE",
+    "preprocessing": "clahe",
+    "frames": 600,
+    "accepted": 147,
+    "success_rate": 0.24540901502504173,
+    "statuses": {
+      "initial_frame": 1,
+      "insufficient_cheirality_inliers": 170,
+      "accepted": 147,
+      "low_cheirality_fraction": 56,
+      "low_parallax": 2,
+      "few_matches": 207,
+      "reanchored_after_few_matches": 12,
+      "insufficient_essential_inliers": 5
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_akaze_clahe_v3.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\vo_pilot_unit\\vo_sequence6_akaze_clahe_v3_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 600,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20,
+      "step_scale": "unit"
+    }
+  }
+]

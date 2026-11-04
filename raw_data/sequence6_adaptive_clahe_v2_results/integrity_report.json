@@ -1,0 +1,40 @@
+{
+  "all_passed": true,
+  "checks": {
+    "pair_count_AKAZE_MLDB": {
+      "pass": true,
+      "rows": 10129,
+      "expected": 10129
+    },
+    "pair_count_ORB": {
+      "pass": true,
+      "rows": 10129,
+      "expected": 10129
+    },
+    "pair_count_SIFT": {
+      "pass": true,
+      "rows": 10129,
+      "expected": 10129
+    },
+    "modes_sum_to_frames": {
+      "pass": true
+    },
+    "output_dir_has_no_baseline_csv": {
+      "pass": true
+    },
+    "columns_match_baseline": {
+      "pass": true
+    },
+    "same_pairs_as_baseline": {
+      "pass": true,
+      "adaptive": 30387,
+      "raw": 30387,
+      "clahe": 30387
+    },
+    "identical_input_pairs_reproduce_baseline": {
+      "pass": true,
+      "compared": 30231,
+      "mismatched": 0
+    }
+  }
+}

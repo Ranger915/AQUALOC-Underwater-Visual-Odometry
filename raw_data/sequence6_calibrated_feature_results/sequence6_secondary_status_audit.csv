@@ -1,0 +1,7 @@
+detector,preprocessing,zero_ratio_match_pairs,positive_pair_count,negative_pair_count,positive_mean_ratio_matches,negative_mean_ratio_matches,positive_mean_reference_inliers_2px,negative_mean_reference_inliers_2px,status_counts
+ORB,raw,7536,1143,13222,18.300087489063866,2.8044168809559826,15.853893263342082,0.04227802147935259,"{""ok"": 6829, ""insufficient_descriptors"": 169, ""no_ratio_matches"": 7367}"
+ORB,clahe,831,1143,13222,64.7244094488189,4.563303584934201,58.77602799650044,0.26115564967478444,"{""ok"": 13534, ""no_ratio_matches"": 831}"
+AKAZE_MLDB,raw,10520,1143,13222,7.05074365704287,3.2530630766903648,5.906386701662292,0.02866434729995462,"{""ok"": 3845, ""no_ratio_matches"": 4933, ""insufficient_descriptors"": 5587}"
+AKAZE_MLDB,clahe,5316,1143,13222,40.94750656167979,3.2759794282256847,36.24584426946632,0.09915292693994857,"{""ok"": 9049, ""no_ratio_matches"": 5316}"
+SIFT,raw,7401,1143,13222,16.95800524934383,1.9553774013008622,14.88976377952756,0.06224474360913629,"{""ok"": 6964, ""no_ratio_matches"": 7232, ""insufficient_descriptors"": 169}"
+SIFT,clahe,3146,1143,13222,79.32195975503062,3.0206474058387536,74.47419072615924,0.4784450158826199,"{""ok"": 11219, ""no_ratio_matches"": 3146}"

@@ -1,0 +1,120 @@
+{
+  "provenance": "AQUALOC archaeological site Sequence 06; dataset source URL / citation must be verified from official dataset documentation",
+  "reproducibility": {
+    "baseline": "fixed clipLimit 2.0 grid 8x8",
+    "adaptive_v1": "global >=35 AND local >=15 -> RAW; else enhanced unless severe",
+    "adaptive_v2": "mean local std >=10.5 -> RAW; otherwise severe if global <25 AND local <10; else moderate CLAHE clipLimit=2.0; inferred from user notes and synthetic-tool implementation",
+    "caveat": "v2 threshold selected from Sequence 06 local contrast histogram after inspecting v1; no generalization claim"
+  },
+  "manifest": {
+    "original_metrics": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\raw_data\\sequence6_frontend_results\\feature_pair_metrics.csv",
+      "exists": true,
+      "bytes": 7484065,
+      "sha256": "81a77b5930963a175ce1163f8029bfafd6b102d8bc9f2b48016dd6649a89d0b1"
+    },
+    "adaptive_v2_metrics": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\sequence6_adaptive_v2_full\\adaptive_feature_pair_metrics.csv",
+      "exists": true,
+      "bytes": 4890263,
+      "sha256": "a87db3c1c40251ad8fccab3c37bdac7e69886f6cb2463f9ac8e05c2baf80e3f1"
+    },
+    "fixed_control_metrics": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\sequence6_fixed_clahe_control_full\\adaptive_feature_pair_metrics.csv",
+      "exists": true,
+      "bytes": 5155324,
+      "sha256": "dbe842fab98b95a0adb26ebb07fc7ff0eec6ac777343a90fb1c8f6aff3c6a489"
+    },
+    "frame_decisions": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\sequence6_adaptive_v2_full\\adaptive_frame_decisions.csv",
+      "exists": true,
+      "bytes": 261995,
+      "sha256": "58009e2abe2bbf21007ca6c225e220c0bb203a08f520e052c25ee47c241aab2c"
+    },
+    "adaptive_metadata": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\sequence6_adaptive_v2_full\\adaptive_metadata.json",
+      "exists": true,
+      "bytes": 1459,
+      "sha256": "837fe9b7b5dd3ef9f8a3741be094014b830111d1dc7d7359c087c4cccef67997"
+    },
+    "adaptive_preprocessing_source": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\aqualoc_adaptive_package\\adaptive_clahe.py",
+      "exists": true,
+      "bytes": 2496,
+      "sha256": "6b870a4528e744e43cef1b20d492226bbfec0df9f29aafe41c03e977b9e10e79"
+    },
+    "adaptive_benchmark_source": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\aqualoc_adaptive_package\\aqualoc_adaptive_benchmark.py",
+      "exists": true,
+      "bytes": 7580,
+      "sha256": "3924c215ed25a577a9daf08699fb2a129602c54057bcec9c9f11ea287cf1d41e"
+    },
+    "original_frontend_source": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\aqualoc_adaptive_package\\aqualoc_sequence6_frontend_original.py",
+      "exists": true,
+      "bytes": 10349,
+      "sha256": "9f0b568287f86382ebd31ec1912f89ccadfd594a2863dcebf92f586948b3b57a"
+    },
+    "fixed_control_source": {
+      "path": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\aqualoc_adaptive_package\\aqualoc_fixed_clahe_control.py",
+      "exists": true,
+      "bytes": 7674,
+      "sha256": "d0d14c0f7e26e05126306fcc640a6312791bd96dda0a91432bd18ce215a3953e"
+    }
+  },
+  "checks": {
+    "decision_rows": 3385,
+    "decision_counts": {
+      "raw": 808,
+      "moderate_clahe": 2577
+    },
+    "unique_frame_ids": true,
+    "v2_reported_counts_match": true,
+    "strong_clahe_count": 0,
+    "original_metrics_rows": 60774,
+    "original_metrics_detector_counts": {
+      "ORB": 20258,
+      "AKAZE_MLDB": 20258,
+      "SIFT": 20258
+    },
+    "fixed_control_metrics_rows": 30387,
+    "fixed_control_metrics_detector_counts": {
+      "ORB": 10129,
+      "AKAZE": 10129,
+      "SIFT": 10129
+    },
+    "adaptive_v2_metrics_rows": 30387,
+    "adaptive_v2_metrics_detector_counts": {
+      "ORB": 10129,
+      "AKAZE": 10129,
+      "SIFT": 10129
+    },
+    "v2_parameters_as_recorded": {
+      "version": "v2",
+      "global_threshold": 35.0,
+      "local_threshold_v1": 15.0,
+      "local_threshold_v2": 10.5,
+      "severe_global_threshold": 25.0,
+      "severe_local_threshold": 10.0,
+      "moderate_clip": 2.0,
+      "strong_clip": 3.0,
+      "grid": 8
+    },
+    "v2_decision_rule_verified_against_claude_original": false
+  },
+  "software": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "opencv": "4.11.0",
+    "numpy": "2.5.4",
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "known_limits": [
+    "Sequence-06-only post-hoc tuning",
+    "Temporal dependence and 52 mixed pairs",
+    "SIFT original/control 40 inlier count and 42 ratio count mismatches (from earlier observed audit)",
+    "COLMAP trajectory exports Sim(3) equivalent, not independent ground truth",
+    "Frontend estimated-F epipolar residual is NOT reference Sampson error",
+    "No independent SLAM poses or trajectory ATE from frontend metrics",
+    "Missing calibrated/mutual matching scripts prevent reference AP/F1/Sampson recomputation until sourced"
+  ]
+}

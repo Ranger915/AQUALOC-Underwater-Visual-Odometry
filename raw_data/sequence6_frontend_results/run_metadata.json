@@ -1,0 +1,25 @@
+{
+  "dataset": "AQUALOC Sequence 06",
+  "image_count": 3385,
+  "first_image": "frame000000.png",
+  "last_image": "frame003384.png",
+  "detectors": [
+    "ORB",
+    "AKAZE_MLDB",
+    "SIFT"
+  ],
+  "preprocessing": [
+    "raw",
+    "clahe"
+  ],
+  "pair_strides": [
+    1,
+    5,
+    20
+  ],
+  "max_features": 1500,
+  "opencv_version": "4.11.0",
+  "numpy_version": "2.5.4",
+  "metrics_rows": 60774,
+  "note": "Uncalibrated feature benchmark, not a complete VO/SLAM system. Epipolar error is a point-to-line residual proxy."
+}

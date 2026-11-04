@@ -1,0 +1,202 @@
+[
+  {
+    "algorithm": "ORB",
+    "preprocessing": "raw",
+    "frames": 100,
+    "accepted": 46,
+    "success_rate": 0.46464646464646464,
+    "statuses": {
+      "initial_frame": 1,
+      "low_cheirality_fraction": 39,
+      "accepted": 46,
+      "insufficient_cheirality_inliers": 14
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_orb_raw_v2.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_orb_raw_v2_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 100,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20
+    }
+  },
+  {
+    "algorithm": "ORB",
+    "preprocessing": "clahe",
+    "frames": 100,
+    "accepted": 43,
+    "success_rate": 0.43434343434343436,
+    "statuses": {
+      "initial_frame": 1,
+      "low_cheirality_fraction": 40,
+      "accepted": 43,
+      "insufficient_cheirality_inliers": 16
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_orb_clahe_v2.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_orb_clahe_v2_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 100,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20
+    }
+  },
+  {
+    "algorithm": "AKAZE",
+    "preprocessing": "raw",
+    "frames": 100,
+    "accepted": 47,
+    "success_rate": 0.47474747474747475,
+    "statuses": {
+      "initial_frame": 1,
+      "insufficient_cheirality_inliers": 40,
+      "accepted": 47,
+      "low_cheirality_fraction": 12
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_akaze_raw_v2.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_akaze_raw_v2_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 100,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20
+    }
+  },
+  {
+    "algorithm": "AKAZE",
+    "preprocessing": "clahe",
+    "frames": 100,
+    "accepted": 47,
+    "success_rate": 0.47474747474747475,
+    "statuses": {
+      "initial_frame": 1,
+      "insufficient_cheirality_inliers": 35,
+      "accepted": 47,
+      "low_cheirality_fraction": 17
+    },
+    "output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_akaze_clahe_v2.csv",
+    "keyframe_output": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\paper_research_draft\\trajectories_v2\\vo_sequence6_akaze_clahe_v2_keyframes.csv",
+    "calibration": {
+      "width": 968,
+      "height": 608,
+      "fx": 543.3327734182214,
+      "fy": 542.398772982566,
+      "cx": 489.02536042247897,
+      "cy": 305.38727712002805,
+      "dist_coeffs": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+      ]
+    },
+    "parameters": {
+      "camera_json": null,
+      "max_frames": 100,
+      "algorithms": [
+        "ORB",
+        "AKAZE"
+      ],
+      "preprocessings": [
+        "raw",
+        "clahe"
+      ],
+      "max_features": 1500,
+      "ratio": 0.75,
+      "mutual": false,
+      "ransac_px": 1.5,
+      "min_essential_inliers": 20,
+      "min_cheirality_inliers": 12,
+      "min_cheirality_fraction": 0.1,
+      "min_parallax_deg": 0.1,
+      "max_anchor_gap": 20
+    }
+  }
+]

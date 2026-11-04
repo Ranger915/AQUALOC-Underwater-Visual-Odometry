@@ -1,0 +1,47 @@
+{
+    "dataset": "AQUALOC Sequence 06",
+    "reference_trajectory": "colmap_traj_sequence_6.txt",
+    "loop_matrix": "colmap_detected_loop_sequence_6.txt",
+    "pose_count": 170,
+    "unique_unordered_pairs": 14365,
+    "frame_sampling_interval": 20,
+    "frame_mapping": "pose index k maps to trajectory frame ID at row k",
+    "quaternion_order": "xyzw",
+    "pose_convention": "camera-to-world",
+    "relative_pose_convention": "X_cj = Rji * X_ci + tji",
+    "essential_matrix": "E = skew(tji) * Rji",
+    "fundamental_matrix": "F = inverse(K).T * E * inverse(K)",
+    "fundamental_matrix_coordinates": "undistorted pixel coordinates",
+    "undistortion_model": "RadTan",
+    "camera_matrix": [
+        [
+            543.3327734182214,
+            0.0,
+            489.02536042247897
+        ],
+        [
+            0.0,
+            542.398772982566,
+            305.38727712002805
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        -0.1255945656257394,
+        0.053221287232781606,
+        9.94070021080493e-05,
+        9.550660927242349e-05
+    ],
+    "image_resolution": [
+        968,
+        608
+    ],
+    "colmap_overlap_positive_pairs": 1143,
+    "colmap_overlap_negative_pairs": 13222,
+    "baseline_units": "trajectory export units; metric provenance should be confirmed",
+    "warning": "COLMAP overlap labels indicate image overlap, not independently verified online loop closures. Exclude temporal neighbours according to a separately declared evaluation protocol."
+}

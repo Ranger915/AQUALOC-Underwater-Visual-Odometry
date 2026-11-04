@@ -1,0 +1,101 @@
+{
+    "total_pairs": 14365,
+    "positive_pairs": 1143,
+    "negative_pairs": 13222,
+    "positive_percentage": 7.9568395405499475,
+    "temporal_gap_distribution": [
+        {
+            "gap_category": "1 keyframe step",
+            "total": 169,
+            "positive": 158,
+            "negative": 11,
+            "positive_percent": 93.49112426035504
+        },
+        {
+            "gap_category": "2 keyframe steps",
+            "total": 168,
+            "positive": 144,
+            "negative": 24,
+            "positive_percent": 85.71428571428571
+        },
+        {
+            "gap_category": "3-5 keyframe steps",
+            "total": 498,
+            "positive": 358,
+            "negative": 140,
+            "positive_percent": 71.88755020080322
+        },
+        {
+            "gap_category": "6-10 keyframe steps",
+            "total": 810,
+            "positive": 270,
+            "negative": 540,
+            "positive_percent": 33.333333333333336
+        },
+        {
+            "gap_category": "11-20 keyframe steps",
+            "total": 1545,
+            "positive": 144,
+            "negative": 1401,
+            "positive_percent": 9.320388349514563
+        },
+        {
+            "gap_category": ">20 keyframe steps",
+            "total": 11175,
+            "positive": 69,
+            "negative": 11106,
+            "positive_percent": 0.6174496644295302
+        }
+    ],
+    "baseline_distribution": [
+        {
+            "baseline_category": "<0.05",
+            "total": 67,
+            "positive": 67,
+            "negative": 0,
+            "positive_percent": 100.0
+        },
+        {
+            "baseline_category": "0.05-0.25",
+            "total": 579,
+            "positive": 510,
+            "negative": 69,
+            "positive_percent": 88.08290155440415
+        },
+        {
+            "baseline_category": "0.25-0.50",
+            "total": 778,
+            "positive": 413,
+            "negative": 365,
+            "positive_percent": 53.084832904884315
+        },
+        {
+            "baseline_category": "0.50-1.00",
+            "total": 1687,
+            "positive": 153,
+            "negative": 1534,
+            "positive_percent": 9.06935388263189
+        },
+        {
+            "baseline_category": "1.00-2.00",
+            "total": 3377,
+            "positive": 0,
+            "negative": 3377,
+            "positive_percent": 0.0
+        },
+        {
+            "baseline_category": "2.00-4.00",
+            "total": 4266,
+            "positive": 0,
+            "negative": 4266,
+            "positive_percent": 0.0
+        },
+        {
+            "baseline_category": ">=4.00",
+            "total": 3611,
+            "positive": 0,
+            "negative": 3611,
+            "positive_percent": 0.0
+        }
+    ]
+}
