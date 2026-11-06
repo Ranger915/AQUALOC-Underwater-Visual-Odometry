@@ -1,0 +1,39 @@
+{
+  "sequence": 5,
+  "frames": 3983,
+  "duration_s": 199.068563168,
+  "nominal_hz": 20,
+  "measured_median_hz": 19.99597521010971,
+  "image_shape": [
+    608,
+    968
+  ],
+  "calibration_sha256": "e8ce9ad65d82ae563c676689444abd210f81c362586473c5752ee5f9bf2c32e2",
+  "timestamp_sha256": "a63ad0fd91cb268038e4dc9a6e478166d7b0c2f9bace636926e59ac1ed8a8980",
+  "adaptive_raw_frames": 107,
+  "adaptive_threshold": 10.5,
+  "clahe": {
+    "clipLimit": 2.0,
+    "tileGridSize": [
+      8,
+      8
+    ]
+  },
+  "detectors": {
+    "ORB": "Feature2D.ORB",
+    "AKAZE": "Feature2D.AKAZE",
+    "SIFT": "Feature2D.SIFT"
+  },
+  "settings": "frozen from Sequence 06; no threshold, clip, gate or source-score tuning on Sequence 05",
+  "primary_reference": "reference/new_archaeo_colmap_traj_sequence_05.txt, publisher-recommended corrected scaling",
+  "updated_reference": "reference/colmap_traj_sequence_5.txt retained for historical-reference replication",
+  "reference_source": "https://seafile.lirmm.fr/d/79b03788f29148ca84e5/",
+  "source_sha256": {
+    "sequence5.py": "174b46e30ce833f543dcfa47f855acc8ef12431da61824f506df9f8b4b4ca046",
+    "run_vo.py": "4d885b6ddaf50dd4f3412276960ead0813d9df1b1d8fb49907de718302589f31",
+    "common.py": "dff40168c97bea8c8c023bc74d3ebe92f5bf54b657e675a589e311b4fbdbd629"
+  },
+  "scope": "different sequence from same archaeological acquisition domain; not independent physical truth or a new environment",
+  "reference_selection_reason": "Official README update dated 2021-02-27 recommends new_ files; chosen by publisher provenance before inspecting trajectory errors",
+  "updated_reference_domain": "340..3980 inclusive; no evaluation/extrapolation before first reference"
+}

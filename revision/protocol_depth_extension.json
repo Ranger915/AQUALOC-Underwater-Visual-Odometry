@@ -1,0 +1,7 @@
+{
+ "reason": "Disentangle the documented recoverPose far-depth filter from the identical geometric gates across the full detector-policy matrix",
+ "pre_result_scope": "This extension is recorded while only ORB raw and adaptive default-depth runs have completed; no high-cutoff matrix outcome was inspected",
+ "settings": "Add distanceThresh=1e9 for all nine configurations, retaining rho=0.06, essential/cheirality count gates, parallax gate, source selection, features and seed scheme",
+ "primary_status": "Retain the pre-existing distance50 matrix as the primary reproduction; report the high-cutoff matrix as a separate filtering sensitivity, without selecting the one with lower trajectory error",
+ "common_set_rule": "Disclose common-fresh set sizes for both matrices; do not fill missing updates with carried poses"
+}

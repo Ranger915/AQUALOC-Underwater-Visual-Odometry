@@ -1,0 +1,51 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 016e743..ece31e8 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -14,12 +14,12 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -march=native")
+ 
+ # Check C++11 or C++0x support
+ include(CheckCXXCompilerFlag)
+-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
++CHECK_CXX_COMPILER_FLAG("-std=c++14" COMPILER_SUPPORTS_CXX11)
+ CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+ if(COMPILER_SUPPORTS_CXX11)
+-   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
++   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+    add_definitions(-DCOMPILEDWITHC11)
+-   message(STATUS "Using flag -std=c++11.")
++   message(STATUS "Using flag -std=c++14.")
+ elseif(COMPILER_SUPPORTS_CXX0X)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+    add_definitions(-DCOMPILEDWITHC0X)
+@@ -388,3 +388,7 @@ if(realsense2_FOUND)
+             Examples_old/Stereo-Inertial/stereo_inertial_realsense_D435i.cc)
+     target_link_libraries(stereo_inertial_realsense_D435i_old ${PROJECT_NAME})
+ endif()
++
++add_executable(mono_aqualoc /mnt/c/Users/Raaghav/Documents/ChatGPT/Deep_sea/baseline_tools/mono_aqualoc.cc)
++target_link_libraries(mono_aqualoc ORB_SLAM3)
++set_target_properties(mono_aqualoc PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
+diff --git a/include/System.h b/include/System.h
+index 872c86e..e47bf5c 100644
+--- a/include/System.h
++++ b/include/System.h
+@@ -173,6 +173,8 @@ public:
+ 
+     // Information from most recent processed frame
+     // You can call this right after TrackMonocular (or stereo or RGBD)
++    Atlas* AtlasForExport() { return mpAtlas; }
++    bool WorkersFinished();
+     int GetTrackingState();
+     std::vector<MapPoint*> GetTrackedMapPoints();
+     std::vector<cv::KeyPoint> GetTrackedKeyPointsUn();
+diff --git a/src/System.cc b/src/System.cc
+index 60d9c51..9b1b9ad 100644
+--- a/src/System.cc
++++ b/src/System.cc
+@@ -1547,3 +1547,5 @@ string System::CalculateCheckSum(string filename, int type)
+ 
+ } //namespace ORB_SLAM
+ 
++
++bool ORB_SLAM3::System::WorkersFinished() { return mpLocalMapper->isFinished() && mpLoopCloser->isFinished() && !mpLoopCloser->isRunningGBA(); }

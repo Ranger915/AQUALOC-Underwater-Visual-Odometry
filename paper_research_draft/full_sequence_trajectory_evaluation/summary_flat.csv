@@ -1,2 +1,0 @@
-reference_count,estimated_rows,associated_frames,fresh_reference_frames,fresh_coverage_pct,accepted_transitions,total_transitions,accepted_pct,train_n,test_n,sim3_scale,heldout_rmse,heldout_median,heldout_p95
-170,3385,170,60,35.294,1188,3384,35.1063829787234,36,24,0.01282840705516224,4.089292604498155,3.9457234019851484,4.98622826056915

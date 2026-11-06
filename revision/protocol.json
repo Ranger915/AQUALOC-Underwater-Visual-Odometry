@@ -1,0 +1,16 @@
+{
+  "status": "Frozen before new outcome inspection",
+  "date": "2026-11-05",
+  "primary_frontend_metric": "all-pair mutual count AP separately for each detector",
+  "secondary_metrics": ["F1 at 2 pixels and 8 matches", "precision", "recall", "feature counts"],
+  "shared_data_warning": "Three detectors share images and labels and are not independent replications",
+  "reference_validation": "Four order/direction hypotheses on the same saved ORB fixed mutual correspondences, without trajectory error; require residual separation; metric scale remains separate",
+  "vo_matrix": {"detectors": ["ORB", "AKAZE", "SIFT"], "policies": ["raw", "fixed", "adaptive"], "ratio": 0.75, "essential_min": 15, "cheirality_min": 10, "rho": 0.06, "parallax_deg": 0.1, "max_anchor_gap": 20, "distance_cutoff": 50, "source_policy": "quality", "scale": "gap"},
+  "vo_orb_fixed_interventions": {"rho": [0.03,0.06,0.10,0.15], "source_policy": ["quality","descriptor_first"], "distance_cutoff": [50,1000000000], "scale": ["unit","sqrt_gap","gap","reference_step_oracle"]},
+  "rolling_alignment": {"train_fresh_poses": [12,24,36], "test_fresh_poses": 6, "stride_test_poses": 6, "sets": ["all-config common fresh reference poses", "pairwise common fresh reference poses", "each-config fresh reference poses"], "minimum_geometry": "rank at least 2 with positive source variance", "uncertainty": "paired segment block bootstrap; no independent-sequence inference"},
+  "preprocessing_controls": {"clip": [1,2,3,4], "tiles": [4,8,16], "adaptive_threshold": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], "random_switch_seeds": 24},
+  "vertex_resampling": {"replicates": 1000, "block_sizes": [1,5,10,20], "rule": "sample vertex blocks with replacement, retain unique sampled vertices and induced pairs; report as sensitivity rather than assert calibrated coverage"},
+  "detector_controls": "Record all getter parameters; raw thresholds selected using feature-count targets only before pair/trajectory outcome evaluation",
+  "claims": "No correlation test on nine configurations; remove acceptance-error abstract claim if full sweeps fail to support it; no metric-scale claim from convention validation",
+  "seed": 20261105
+}

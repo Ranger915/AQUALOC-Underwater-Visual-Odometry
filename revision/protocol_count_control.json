@@ -1,0 +1,7 @@
+{
+ "purpose": "Diagnose feature-count confounding without selecting thresholds by AP or trajectory error",
+ "global_control": "Select a single raw detector threshold by mean feature-count distance to fixed CLAHE, from the recorded grid",
+ "exact_budget_control": "Use the lowest threshold in that same feature-count grid, then retain top-response raw features up to each image's fixed-CLAHE feature count; record whether each image actually reaches the target",
+ "interpretation": "The exact-budget control is a diagnostic counterfactual using the enhanced image's count to define the budget, not a deployable raw-only adaptive rule or a free runtime improvement",
+ "primary_metric": "all-pair mutual count AP; report achieved per-image count equality separately"
+}

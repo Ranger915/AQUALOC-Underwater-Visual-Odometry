@@ -1,9 +1,0 @@
-{
-  "opencv": "4.11.0",
-  "numpy": "2.5.4",
-  "image_dir": "C:\\Users\\Raaghav\\Downloads\\archaeo_sequence_6_raw_data\\raw_data\\images_sequence_6",
-  "repeats": 3,
-  "step": 1,
-  "frames": 3385,
-  "interpretation": "Within-run wall time; reads excluded from total preprocessing; excludes detector/matcher geometry time. For full end-to-end compare identical pipelines with timing instrumentation."
-}

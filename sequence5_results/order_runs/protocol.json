@@ -1,0 +1,19 @@
+{
+  "seeds": [
+    20261106,
+    20261107,
+    20261108,
+    20261109
+  ],
+  "frames": 3983,
+  "detector": "ORB",
+  "cutoff": 1000000000.0,
+  "rho": 0.06,
+  "source_sha256": {
+    "run_vo.py": "4d885b6ddaf50dd4f3412276960ead0813d9df1b1d8fb49907de718302589f31",
+    "common.py": "dff40168c97bea8c8c023bc74d3ebe92f5bf54b657e675a589e311b4fbdbd629",
+    "order_trials_sequence5.py": "9aeb0ce207d074b463340f1f00472ab0a88f4f7f4f7e088c4a9fa9fa3d72c58e"
+  },
+  "intervention": "joint correspondence permutation; existing ordered run is trial zero",
+  "tuning": "none"
+}

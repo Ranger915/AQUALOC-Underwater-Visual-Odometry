@@ -1,0 +1,54 @@
+{
+  "source": "https://github.com/UZ-SLAMLab/ORB_SLAM3",
+  "commit": "4452a3c4ab75b1cde34e5505a36ec3f9edcdc4c4",
+  "inputs": {
+    "5": {
+      "frames": 3983,
+      "timestamps_sha256": "a63ad0fd91cb268038e4dc9a6e478166d7b0c2f9bace636926e59ac1ed8a8980",
+      "decision_sha256": "b092c0a5d46a77efa47d783b5ca94c310f9602586657d291b9f04332e1767577",
+      "manifest_sha256": "293f3e5f310421fd826a65199582201404cb11d06aa3f92275480ae0f569cbe2"
+    },
+    "6": {
+      "frames": 3385,
+      "timestamps_sha256": "4cb417cc2ad306f921c37edb0ec19c8117fd295d0d0aa099620a303e8d2af134",
+      "decision_sha256": "58009e2abe2bbf21007ca6c225e220c0bb203a08f520e052c25ee47c241aab2c",
+      "manifest_sha256": "ee4ca38b4d7a5a75ed006dd65a754fe9dd92fa1bd425ce7b173981e2506471ce"
+    }
+  },
+  "preprocessing": [
+    "raw",
+    "fixed",
+    "adaptive"
+  ],
+  "process_repeats": 3,
+  "seeds": [
+    20261105,
+    20261106,
+    20261107
+  ],
+  "nfeatures": 1500,
+  "pyramid_scale": 1.2,
+  "levels": 8,
+  "FAST": [
+    20,
+    7
+  ],
+  "clahe": [
+    2,
+    8,
+    8
+  ],
+  "viewer": false,
+  "resizing": false,
+  "imu": false,
+  "pressure": false,
+  "pacing": "dataset timestamp gaps; no catch-up for slow frames",
+  "scope": "monocular established-system baseline, calibrated camera, no Sequence05 tuning",
+  "export": "causal per-frame state/pose/map ID and final optimized trajectory separately for every nonempty map; select largest map by keyframe count, never reference error",
+  "patch": "C++14 compatibility, input adapter, read-only Atlas/thread-finish accessors; no estimator change",
+  "source_sha256": {
+    "mono_aqualoc.cc": "7e9e26f385da41aa7dfd6c14ed93518aa3d91b28090a9c1b156dbe27fb7422b5",
+    "build_orbslam3.sh": "1012bde9b47f8d3fa9f0be952f8bffa35fe82f73f8b6d9b784da29e375cb786f"
+  },
+  "config_sha256": "0ff584e1ee10b4b7bf5192b09d4c3430238053f046e43465749fe8a7aa0d21ac"
+}
